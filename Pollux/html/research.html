@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : Editor</title>
+
+    <link rel="stylesheet" href="../css/research.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h2><a href="../html/landing.html"><i class="ion-plane"></i>WordPad</a></h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" title="Read">Read</a>
+                </li>
+                <li>
+                    <a href="post.html" title="Post">Post</a>
+                </li>
+                <li>
+                    <a href="#" title="About US">About Us</a>
+                </li>
+                <li>
+                    <a class="btn" href="register.html" title="Register / Log In">Register/Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" id="researchs">
+
+        <div class="research">
+            <div class="alert" style="display: none;">Bravo, Published!!</div>
+            <textarea type="text" class="title" id="title_re" placeholder="Research title..." required></textarea>
+            <textarea type="text" class="article" id="content_re" placeholder="Start writing here..." required></textarea>
+            <input type="checkbox" class="checkboxes">Technology
+            <input type="checkbox" class="checkboxes">Data Science
+            <input type="checkbox" class="checkboxes">CryptoCurrency
+            <input type="checkbox" class="checkboxes">Artificial Intelligence
+            <input type="checkbox" class="checkboxes">Programming
+            <input type="checkbox" class="checkboxes">Ar/VR
+            <input type="checkbox" class="checkboxes">Science
+            <button type="submit" class="btn dark publish-btn" id="submit">Publish</button>
+        </div>
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="../js/research.js"></script>
+</body>
+
+</html>

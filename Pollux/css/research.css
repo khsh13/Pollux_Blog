@@ -1,0 +1,90 @@
+@import url(landing.css);
+body{
+    background:none;
+    background-color: #2d2d2d;
+}
+
+.research{
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px 0;
+    
+}
+
+textarea::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.title,
+.article{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    outline: none;
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    resize: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title::placeholder,
+.article::placeholder{
+    color: #2d2d2d;
+}
+
+.article{
+    height: 350px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    background: #d73851;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.blog .btn{
+    position: absolute;
+    left: 700px;
+    bottom: 35px;
+}
+
+
+nav .btn{
+    background: none;
+}   
+
+.alert{
+    width: 100%;
+    background: #d73851;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
