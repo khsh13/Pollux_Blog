@@ -34,6 +34,8 @@
       const user = userCredential.user;
       console.log(user);
       alert("Registered successfully!!");
+      document.getElementById("test").style.display="none";
+      document.getElementById("psignup").classList.remove("form-post");
       // ...
     })
     .catch((error) => {
@@ -56,7 +58,12 @@
           // Signed in 
           const user = userCredential.user;
           console.log(user);
+          // alert(user.email+" Logged In!!!");
+          
+          // document.getElementById("logged").style.display="none";
+          
           alert(user.email+" Logged In!!!");
+          document.getElementById("logged").style.display="none";
           document.getElementById('logout').style.display ='block';
           // ...
         })
@@ -75,6 +82,7 @@
             console.log('Sign-out successful.');
             alert('Sign-out successful.');
             document.getElementById('logout').style.display = 'none';
+            document.getElementById('logged').style.display ='block';
           }).catch((error) => {
             // An error happened.
             console.log('An error happened.');

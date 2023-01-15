@@ -245,3 +245,8 @@
     font-size: 30px;
     color: #d73851;
 }
+
+/* added by ridhi for signup */
+.form-post{
+    display: none;
+}

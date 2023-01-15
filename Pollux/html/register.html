@@ -17,14 +17,17 @@
     <a href="../html/landing.html" class="back"><i class="fa-solid fa-angles-left"></i></a>
 
     <div class="form-structor">
-        <div class="signup">
-            <h2 class="form-title" id="signup"><span>New Here?</span>Sign up</h2>
-            <div class="form-holder">
-                <input type="text" class="input" name="name" id="name" placeholder="Name" />
-                <input type="email" class="input" name="email" id="email" placeholder="Email" />
-                <input type="password" class="input" name="password" id="password" placeholder="Password" />
+        <div class="signup" id="sign-up">
+            <h2 class="form-post" id="psignup" style="color: aliceblue;">HEY THERE!</h2>
+            <div id="test">
+                <h2 class="form-title" id="signup"><span>New Here?</span>Sign up</h2>
+                <div class="form-holder">
+                    <input type="text" class="input" name="name" id="name" placeholder="Name" />
+                    <input type="email" class="input" name="email" id="email" placeholder="Email" />
+                    <input type="password" class="input" name="password" id="password" placeholder="Password" />
+                </div>
+                <button class="submit-btn" id="register">Sign up</button>
             </div>
-            <button class="submit-btn" id="register">Sign up</button>
         </div>
         <div class="login slide-up">
             <div class="center">
@@ -33,8 +36,8 @@
                     <input type="email" class="input" id="login_email" placeholder="Email" />
                     <input type="password" class="input" id="login_password" placeholder="Password" />
                 </div>
-                <button class="submit-btn" id="logged">Log in</button>
-                <button class="submit-btn" id="logout" style="display: none;">Log Out</button>
+                <button class="submit-btn" id="logged" onclick="hide()">Log in</button>
+                <button class="submit-btn" id="logout" style="display: none;" onclick="show()">Log Out</button>
             </div>
         </div>
     </div>
