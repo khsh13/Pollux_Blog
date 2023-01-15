@@ -1,32 +1,7 @@
 @import url(landing.css);
 body{
     background:none;
-}
-.banner{
-    width: 100%;
-    height: 400px;
-    position: relative;
-    background: #e7e7e7;
-    background-size: cover;
-    background-position: center;
-}
-
-.banner-upload-btn{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.banner-upload-btn img{
-    width: 20px;
+    background-color: #2d2d2d;
 }
 
 .blog{
@@ -35,11 +10,14 @@ body{
     height: 100px;
     display: block;
     margin: auto;
+    margin-top: 50px;
     padding: 50px 0;
+    
 }
 
 textarea::-webkit-scrollbar{
     width: 10px;
+    height: 10px;
 }
 
 textarea::-webkit-scrollbar-thumb{
@@ -68,7 +46,7 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .article{
-    height: 500px;
+    height: 350px;
     font-size: 20px;
     margin-top: 20px;
     line-height: 30px;
@@ -77,23 +55,11 @@ textarea::-webkit-scrollbar-thumb{
     white-space: pre-wrap;
 }
 
-.blog-options{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    z-index: 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .btn{
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.7);
-    color: #000;
+    background: #d73851;
+    color: #fff;
     text-decoration: none;
     text-transform: capitalize;
     border: none;
@@ -101,18 +67,24 @@ textarea::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
+.blog .btn{
+    position: absolute;
+    left: 700px;
+    bottom: 35px;
+}
+
+
 nav .btn{
     background: none;
-}
+}   
 
-.btn.grey{
-    background: #a5a5a5;
-    color: #fff;
-    margin-left: 20px;
-    font-size: 14px;
-}
-
-.btn.dark{
+.alert{
+    width: 100%;
     background: #d73851;
-    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
 }
