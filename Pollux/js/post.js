@@ -2,12 +2,22 @@ const getAuth = require("firebase/auth");
 const auth = getAuth();
 const user = auth.currentUser;
 
-if (user) {
-  app.get("/", function(req, res){
-    res.sendFile(__dirname + "/post.html");
-  });
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const container = document.querySelector(".container");
 
-  } else {
-  // No user is signed in.
-    alert('Kindly login.');
-  }
+left.addEventListener("mouseenter", () => {
+  container.classList.add("hover-left");
+});
+
+left.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-left");
+});
+
+right.addEventListener("mouseenter", () => {
+  container.classList.add("hover-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  container.classList.remove("hover-right");
+});
