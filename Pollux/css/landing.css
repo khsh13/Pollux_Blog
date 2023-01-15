@@ -24,7 +24,7 @@ html {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   background: url('https://images.unsplash.com/photo-1600693615301-8752ab9411f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') no-repeat center center fixed;
@@ -33,7 +33,7 @@ body {
   background-size: cover;
   color: #0a0a0b;
   overflow: hidden;
-}
+} */
 
 ul, nav{
   list-style: none;
@@ -238,7 +238,7 @@ input[type="search"] {
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
 body {
-	background: url(https://www.pixelstalk.net/wp-content/uploads/images2/Download-Dark-Wallpapers-HD.png) no-repeat center center fixed; 
+	background: url(https://w0.peakpx.com/wallpaper/30/833/HD-wallpaper-artistic-mountain-pink-minimalist.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

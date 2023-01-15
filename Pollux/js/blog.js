@@ -1,31 +1,3 @@
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCHiYDxPf_ShRVsEIcc9_edphiPaDaU5q0",
-//   authDomain: "wordpad-46016.firebaseapp.com",
-//   databaseURL: "https://wordpad-46016-default-rtdb.firebaseio.com",
-//   projectId: "wordpad-46016",
-//   storageBucket: "wordpad-46016.appspot.com",
-//   messagingSenderId: "668400414476",
-//   appId: "1:668400414476:web:e6c0af264657227f296329",
-//   measurementId: "G-TCBFR1W0L9"
-// };
-
-// firebase.initializeApp(firebaseConfig);
-
-// //reference from database
-// var blogDB = firebase.database().ref("blogs");
-
-// document.getElementById("blogs").addEventListener("submit", publishBlog);
-
-// function publishBlog(e) {
-//   e.preventDefault();
-
-//   var title = document.getElementById("title");
-//   var content = document.getElementById("content");
-//   console.log("Working");
-
-//   console.log(title, content);
-// }
-
 const firebaseConfig = {
   //   copy your firebase config informations
   apiKey: "AIzaSyCHiYDxPf_ShRVsEIcc9_edphiPaDaU5q0",
