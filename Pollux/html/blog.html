@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/blog.css">
 
 </head>
+
 <body>
 
     <header>
@@ -31,21 +33,26 @@
         </nav>
     </header>
 
-    <div class="banner">
-        <input type="file" accept="image/*" id="banner-upload" hidden>
-        <label for="banner-upload" class="banner-upload-btn"><img src="../images/upload.png" alt="upload banner"></label>
-    </div>
-    
-    <div class="blog">
-        <textarea type="text" class="title" placeholder="Blog title..."></textarea>
-        <textarea type="text" class="article" placeholder="Start writing here..."></textarea>
-    </div>
+    <form action="" id="blogs">
 
-    <div class="blog-options">
-        <button class="btn dark publish-btn">Publish</button>
-        <input type="file" accept="image/*" id="image-upload" hidden>
-        <label for="image-upload" class="btn grey upload-btn">Upload Image</label>
-    </div>
+        <div class="blog">
+            <div class="alert" style="display: none;">Bravo, Published!!</div>
+            <textarea type="text" class="title" id="title" placeholder="Blog title..."></textarea>
+            <textarea type="text" class="article" id="content" placeholder="Start writing here..."></textarea>
+            <input type="checkbox" class="checkboxes">Technology
+            <input type="checkbox" class="checkboxes">Data Science
+            <input type="checkbox" class="checkboxes">CryptoCurrency
+            <input type="checkbox" class="checkboxes">Artificial Intelligence
+            <input type="checkbox" class="checkboxes">Programming
+            <input type="checkbox" class="checkboxes">Ar/VR
+            <input type="checkbox" class="checkboxes">Science
+            <button type="submit" class="btn dark publish-btn" id="submit">Publish</button>
+        </div>
 
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="../js/blog.js"></script>
 </body>
+
 </html>
