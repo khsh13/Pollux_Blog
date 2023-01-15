@@ -1,7 +1,3 @@
-const getAuth = require("firebase/auth");
-const auth = getAuth();
-const user = auth.currentUser;
-
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const container = document.querySelector(".container");
