@@ -1,19 +1,13 @@
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
-const container = document.querySelector(".container");
+const getAuth = require("firebase/auth");
+const auth = getAuth();
+const user = auth.currentUser;
 
-left.addEventListener("mouseenter", () => {
-  container.classList.add("hover-left");
-});
+if (user) {
+  app.get("/", function(req, res){
+    res.sendFile(__dirname + "/post.html");
+  });
 
-left.addEventListener("mouseleave", () => {
-  container.classList.remove("hover-left");
-});
-
-right.addEventListener("mouseenter", () => {
-  container.classList.add("hover-right");
-});
-
-right.addEventListener("mouseleave", () => {
-  container.classList.remove("hover-right");
-});
+  } else {
+  // No user is signed in.
+    alert('Kindly login.');
+  }
